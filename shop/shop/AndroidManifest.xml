@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.olya.shop">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewModels.PackTypeActivity" />
+        <activity android:name=".ViewModels.ItemCardActivity" />
+        <activity android:name=".ViewModels.AdditICardInfoActivity" />
+        <activity android:name=".ViewModels.PackInfoActivity" />
+        <activity android:name=".ViewModels.VendorActivity" />
+        <activity android:name=".ViewModels.BuyerActivity" />
+        <activity android:name=".ViewModels.CountryActivity" />
+        <activity android:name=".ViewModels.CityActivity" />
+        <activity android:name=".ViewModels.StreetActivity" />
+        <activity android:name=".ViewModels.AddressActivity" />
+        <activity android:name=".ViewModels.IncomingActivity" />
+        <activity android:name=".ViewModels.AddressVendorActivity" />
+        <activity android:name=".ViewModels.AddressBuyerActivity" />
+        <activity android:name=".ViewModels.OutcomingActivity" />
+
+        <activity android:name=".ViewModels.CatalogsActivity" />
+        <activity android:name=".ViewModels.AddItemActivity" />
+    </application>
+
+</manifest>

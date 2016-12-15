@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/colorAliceBlue">
+
+    <EditText
+        android:id="@+id/name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="name"
+        android:textColor="?attr/colorPrimaryDark">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/barcode_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="bar code"
+        android:inputType="textMultiLine"
+        android:minLines="5" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/price_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="price"
+        android:inputType="textMultiLine"
+        android:minLines="5" >
+    </EditText>
+    <EditText
+        android:id="@+id/packtype_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="package type"
+        android:inputType="textMultiLine"
+        android:minLines="5" >
+    </EditText>
+    <EditText
+        android:id="@+id/amount_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="amount"
+        android:inputType="textMultiLine"
+        android:minLines="5" >
+    </EditText>
+    <EditText
+        android:id="@+id/vendor_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="vendor"
+        android:inputType="textMultiLine"
+        android:minLines="5" >
+    </EditText>
+    <EditText
+        android:id="@+id/date_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="date type"
+        android:inputType="textMultiLine"
+        android:minLines="5" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_addrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="add_record"
+        android:textColor="@android:color/holo_blue_dark"
+        android:soundEffectsEnabled="?attr/isLightTheme"
+        android:textColorLink="?android:attr/textColorHighlightInverse"
+        android:onClick="addItem"
+        />
+
+</LinearLayout>
