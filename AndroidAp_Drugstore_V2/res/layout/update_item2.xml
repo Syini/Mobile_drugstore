@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="235dp"
+        android:orientation="vertical"
+        android:padding="6dip">
+
+        <EditText
+            android:id="@+id/nomnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_marginLeft="150dp"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:hint="name" />
+
+        <EditText
+            android:id="@+id/nomnum1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:textSize="18sp"
+            android:lineSpacingExtra="0sp"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="150dp"
+            android:hint="units" />
+
+        <EditText
+            android:id="@+id/nomnum2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_toEndOf="@+id/textView2"
+            android:textSize="18sp"
+            android:lineSpacingExtra="0sp"
+            android:layout_marginLeft="130dp"
+            android:hint="nom_num" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/artic_num"
+            android:hint="articular num"
+            android:layout_above="@+id/bar_code"
+            android:layout_alignStart="@+id/nomnum" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/bar_code"
+            android:hint="bar code"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/artic_num" />
+
+        <TextView
+            android:text="BarCode:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textSize="24sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom num:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Units:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24sp"
+            android:layout_above="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24sp"
+            android:layout_alignBottom="@+id/nomnum"
+            android:layout_alignParentStart="true"
+            android:layout_alignStart="@+id/nomnum"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:text="Articular num:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="24sp"
+            android:layout_alignBaseline="@+id/artic_num"
+            android:layout_alignBottom="@+id/artic_num"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:stretchColumns="*"
+        android:background="@color/colorAccent"
+        android:layout_weight="0.78">
+    </TableLayout>
+
+    <Button
+        android:text="Update item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_item"
+        android:background="?attr/actionModeSplitBackground"
+        android:textColor="@android:color/background_light"
+        android:onClick="updateItem"
+        android:layout_weight="0.25" />
+
+</LinearLayout>

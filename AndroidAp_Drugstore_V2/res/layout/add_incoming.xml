@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <com.example.olya.shop.InstantAutoComplete
+        android:id="@+id/spinner_itemid"
+        android:tag="item_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="item"
+        android:textColor="?attr/colorControlNormal">
+        </com.example.olya.shop.InstantAutoComplete>
+
+    <Button
+        android:text="open dialog list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:onClick="openDialog"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Spinner
+
+        android:id="@+id/spinner_vendorid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="vendor"
+        android:backgroundTint="@color/colorPrimary"></Spinner>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/amount_edittext"
+        android:hint="amount"
+        android:elevation="0dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/date"
+        android:textColor="?attr/colorControlNormal"
+        android:hint="20.12.2016" />
+
+    <Button
+        android:text="add incoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_incoming"
+        android:onClick="addIncoming"
+        android:background="@color/colorAntiqueWhite"
+        android:textColor="@android:color/holo_purple" />
+
+</LinearLayout>
